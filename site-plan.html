@@ -1,54 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Merrill's Personal Site Plan</title>
-  <link rel="stylesheet" href="site-plan.css" />
+  <title>About Me - John Merrill - WDD 130.03</title>
+  <link rel="stylesheet" href="styles/site-plan.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>John Merrill's Personal Site Plan</h1>
+  <header style="background-color: #2196F3; color: white;">
+    <h1>About Me</h1>
+    <h2>John Merrill</h2>
+    <h3>WDD 130.03</h3>
   </header>
 
-  <section class="site-info">
-    <h2>Site Information</h2>
-    <p><strong>Site Name:</strong> John Merrill's Personal Website</p>
-    <p><strong>Student Name:</strong> John Merrill</p>
-    <p><strong>Section Number:</strong> WDD 130.03</p> <!-- Replace xx with your real section -->
-  </section>
+  <main>
+    <section class="author-info" style="background-color: #e0f7fa; padding: 10px; border-left: 5px solid #4CAF50;">
+      <p><strong>Site Author:</strong> John Merrill</p>
+      <p><strong>Course:</strong> Web Fundamentals (WDD 130.03)</p>
+    </section>
 
-  <section class="purpose-audience">
-    <h2>Purpose and Audience</h2>
-    <p><strong>Purpose:</strong> This site will showcase my personal interests, hobbies, and provide a platform for me to introduce myself to others. It will also help me practice HTML and CSS while learning web development fundamentals.</p>
-    <p><strong>Audience:</strong> My classmates, friends, and anyone interested in learning more about me in an easy and engaging way.</p>
-  </section>
+    <hr />
+    <h2 style="color: #2196F3;">Overview</h2>
+    <h3 style="color: #4CAF50;">Purpose</h3>
+    <p>
+      This site will showcase my personal interests, hobbies, and provide a platform for me to introduce myself to others. It will also help me practice HTML and CSS while learning web development fundamentals.
+    </p>
 
-  <section class="logo">
-    <h2>Logo</h2>
-    <img src="images/Untitled.png" alt="John Merrill Logo" width="200">
-    <p>This logo reflects my personality and the content of my site, representing both my creative and professional sides.</p>
-  </section>
+    <h3 style="color: #4CAF50;">Audience</h3>
+    <p>
+      My classmates, friends, and anyone interested in learning more about me in an easy and engaging way.
+    </p>
 
-  <section class="colors-fonts">
-    <h2>Colors and Fonts</h2>
-    <p><strong>Color Scheme:</strong></p>
-    <ul>
-      <li><strong>Primary Color:</strong> #4CAF50 (Green)</li>
-      <li><strong>Secondary Color:</strong> #FF9800 (Orange)</li>
-      <li><strong>Accent Color:</strong> #2196F3 (Blue)</li>
-    </ul>
-    <p><strong>Fonts:</strong> Roboto as the body font, Montserrat for headings.</p>
-  </section>
+    <hr />
+    <h2 style="color: #2196F3;">Branding</h2>
+    <h3 style="color: #4CAF50;">Website Logo</h3>
+    <img src="images/Untitled.png" alt="John Merrill Logo" width="200" />
 
-  <section class="child-pages">
-    <h2>Child Pages</h2>
-    <p>I will create at least two child pages: "About Me" and "My Projects". These pages will link back to the home page and contain additional content about my background and work.</p>
-  </section>
+    <hr />
+    <h2 style="color: #2196F3;">Style Guide</h2>
 
-  <footer>
-    <p>© 2025 John Merrill's Personal Website</p>
-  </footer>
+    <h3 style="color: #4CAF50;">Color Palette</h3>
+    <p>These are the main colors used in my site, with examples and hex values:</p>
+    <table class="colors">
+      <tr>
+        <th style="color: #4CAF50;">Primary<br /><span>#4CAF50</span></th>
+        <th style="color: #FF9800;">Secondary<br /><span>#FF9800</span></th>
+        <th style="color: #2196F3;">Accent 1<br /><span>#2196F3</span></th>
+        <th style="color: #006064;">Accent 2<br /><span>#e0f7fa</span></th>
+      </tr>
+      <tr>
+        <td class="primary"></td>
+        <td class="secondary"></td>
+        <td class="accent1"></td>
+        <td class="accent2"></td>
+      </tr>
+    </table>
+
+    <h3 style="color: #4CAF50;">Typography</h3>
+    <h4>Heading Font: Montserrat</h4>
+    <p style="font-family: 'Montserrat', sans-serif; font-size: 1.5rem;">
+      This is a heading using the Montserrat font.
+    </p>
+
+    <h4>Paragraph Font: Roboto</h4>
+    <p style="font-family: 'Roboto', sans-serif;">
+      This is a paragraph using the Roboto font. It's a clean and modern font that works well for body text.
+    </p>
+
+    <h3 style="color: #4CAF50;">Normal Paragraph Example</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Duis auctor lectus vel lectus placerat, nec suscipit neque tempor.
+    </p>
+
+    <h3 style="color: #FF9800;">Colored Paragraph Example</h3>
+    <p class="colored">
+      This paragraph uses the secondary color (#FF9800) for emphasis and stands out on a light background.
+    </p>
+
+    <h3 style="color: #2196F3;">Navigation</h3>
+    <nav style="background-color: #e0f7fa; padding: 10px; border-radius: 5px;">
+      <a href="#" style="color: #2196F3;">Home</a>
+      <a href="#" style="color: #2196F3;">About Me</a>
+      <a href="#" style="color: #2196F3;">My Projects</a>
+    </nav>
+
+    <hr />
+    <h2 style="color: #2196F3;">Site Map</h2>
+    <div class="sitemap">
+      <div class="sm-home" style="background-color: #4CAF50;">Home</div>
+      <div class="sm-page2" style="background-color: #FF9800;">About Me</div>
+      <div class="sm-page3" style="background-color: #2196F3;">My Projects</div>
+      <div class="top">&nbsp;</div>
+      <div class="left">&nbsp;</div>
+      <div class="right">&nbsp;</div>
+    </div>
+
+    <hr />
+    <h2 style="color: #2196F3;">Content</h2>
+
+    <h3>Home Page</h3>
+    <p>
+      Welcome to my personal website! On this homepage, you'll get a quick overview of who I am, what I enjoy, and where to learn more about my projects and background.
+    </p>
+    <p>Images for the Home Page</p>
+    <img src="#" alt="image for homepage" />
+    <img src="#" alt="image for homepage" />
+
+    <h3>About Me</h3>
+    <p>
+      This page will include a more detailed introduction to me, my hobbies, education, and interests. It’s a deeper dive into my story and background.
+    </p>
+    <p>Images for the About Me Page</p>
+    <img src="#" alt="image for About Me" />
+    <img src="#" alt="image for About Me" />
+
+    <h3>My Projects</h3>
+    <p>
+      This page showcases projects I've worked on, such as web designs, coding experiments, and collaborative work.
+    </p>
+    <p>Images for the My Projects Page</p>
+    <img src="#" alt="image for Projects" />
+    <img src="#" alt="image for Projects" />
+
+    <hr />
+    <h2 style="color: #2196F3;">Wireframes</h2>
+    <p>Create three wireframes for your site. One for each page and list them here.</p>
+
+    <h3>Home</h3>
+    <p>A simple welcome layout with intro and navigation.</p>
+    <img src="#" alt="home page wireframe" />
+
+    <h3>About Me</h3>
+    <p>Intro text, image, bio details, and bullet points about interests.</p>
+    <img src="#" alt="about me wireframe" />
+
+    <h3>My Projects</h3>
+    <p>Project list or thumbnails that link to GitHub or details.</p>
+    <img src="#" alt="projects wireframe" />
+  </main>
 </body>
 </html>
-
