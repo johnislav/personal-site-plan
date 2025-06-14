@@ -1,146 +1,128 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+/* Google Fonts already linked in HTML */
 
-/* Base Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Styling */
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-  max-width: 960px;
-  margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Header */
+h1, h2, h3, h4, nav a {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
-  background-color: #2196F3; /* Accent1 */
+  background-color: #2196F3;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 20px 0;
+  border-radius: 8px;
 }
 
-header h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.2rem;
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
-header h2 {
-  font-size: 1.2rem;
-  margin-top: 5px;
-}
-
-/* Headings */
-h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif;
-  color: #2196F3; /* Accent1 */
-  margin-top: 20px;
-  margin-bottom: 10px;
+section h2 {
+  border-left: 5px solid #2196F3;
+  padding-left: 10px;
+  color: #2196F3;
+  margin-bottom: 15px;
 }
 
 h3 {
-  font-size: 1.3rem;
+  color: #4CAF50;
 }
 
-h4 {
-  font-size: 1.1rem;
-}
-
-/* Paragraphs */
-p {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-.colored {
-  color: #FF9800; /* Secondary */
-  background-color: #e8f5e9;
-  padding: 10px;
-  border-left: 4px solid #FF9800;
-  border-radius: 4px;
-}
-
-/* Logo image */
+/* Images now significantly smaller */
 img {
-  margin: 10px 0;
-  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 6px;
+  max-width: 25%;  /* Reduced size */
   height: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Table for color palette */
-table.colors {
-  width: 100%;
-  margin-top: 10px;
-  border-collapse: collapse;
-  text-align: center;
-}
-
-.colors th, .colors td {
-  padding: 15px;
-  border: 1px solid #ccc;
-}
-
-.colors .primary {
-  background-color: #4CAF50; /* Primary - Green */
-}
-
-.colors .secondary {
-  background-color: #FF9800; /* Secondary - Orange */
-}
-
-.colors .accent1 {
-  background-color: #2196F3; /* Accent1 - Blue */
-}
-
-.colors .accent2 {
-  background-color: #e0f7fa; /* Accent2 - Light Teal */
-}
-
-/* Navigation */
 nav {
-  margin: 20px 0;
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: #e0f7fa;
+  border-radius: 6px;
   text-align: center;
 }
 
 nav a {
-  text-decoration: none;
-  margin: 0 15px;
   color: #2196F3;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 nav a:hover {
   color: #FF9800;
 }
 
-/* Site Map Visual Blocks */
+/* Site Map Grid */
 .sitemap {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   text-align: center;
-  margin-top: 20px;
 }
 
 .sitemap div {
-  background-color: #e3f2fd;
-  padding: 10px;
+  background-color: #ffffff;
   border: 2px solid #2196F3;
-  border-radius: 5px;
+  padding: 10px;
   font-weight: bold;
+  color: #2196F3;
+  border-radius: 6px;
 }
 
-/* Wireframe Images */
-main img[alt*="wireframe"] {
-  border: 1px dashed #999;
-  padding: 8px;
-  margin-bottom: 15px;
+/* Color Table */
+table.colors th {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.primary {
+  background-color: #4CAF50;
+}
+
+.secondary {
+  background-color: #FF9800;
+}
+
+.accent1 {
+  background-color: #2196F3;
+}
+
+.accent2 {
+  background-color: #e0f7fa;
+}
+
+/* Author Info Box */
+.author-info {
+  background-color: #e0f7fa;
+  padding: 12px;
+  margin-bottom: 25px;
+  border-left: 5px solid #4CAF50;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: #2196F3;
+  border-radius: 6px;
+  margin-top: 40px;
 }
