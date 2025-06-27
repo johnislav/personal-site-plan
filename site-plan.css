@@ -126,3 +126,56 @@ footer {
   border-radius: 6px;
   margin-top: 40px;
 }
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #2196F3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #FF9800;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #e0f7fa;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
