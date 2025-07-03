@@ -4,34 +4,142 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | John Merrill</title>
-  <link rel="stylesheet" href="styles/style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #4CAF50;
+      --secondary: #FF9800;
+      --accent1: #2196F3;
+      --accent2: #e0f7fa;
+      --heading-font: 'Montserrat', sans-serif;
+      --body-font: 'Roboto', sans-serif;
+    }
+
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--body-font);
+      background-color: var(--accent2);
+      color: #333;
+    }
+
+    h1, h2, h3, nav a {
+      font-family: var(--heading-font);
+    }
+
+    header {
+      background-color: var(--accent1);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 4px solid var(--primary);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header h2 {
+      margin: 10px 0 20px;
+      font-weight: normal;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--secondary);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .main-img {
+      display: block;
+      max-width: 300px;
+      margin: 30px auto 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: var(--accent1);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-<div id="content">
-  
+
   <header>
     <h1>John Merrill</h1>
     <h2>WDD 130.03</h2>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About Me</a>
       <a href="projects.html">My Projects</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Welcome to My Personal Site</h2>
-      <p>        Welcome to my site! I’m John Merrill—a BYUI student working on a degree in business management. This page is your introduction to who I am and what you’ll find here. It’s clear, simple, and designed to help users move to the other pages quickly.</p>
-      <img src="images/john image.JPG" alt="Portrait of John Merrill" />
+    <section class="card">
+      <h2>🚀 Welcome to My Personal Site</h2>
+      <p>
+        I'm <strong>John Merrill</strong> — a student at BYU–Idaho pursuing Business Management with a passion for tech, design, and leadership. This site gives you a glimpse of my journey, experience, and the creative work I’m building.
+      </p>
+      <img src="images/john image.JPG" alt="Portrait of John Merrill" class="main-img" />
     </section>
   </main>
-  
+
   <footer>
     <p>&copy; 2025 John Merrill | WDD 130.03</p>
-    <p><a href="site-plan.html">Site Plan</a></p>
+    <a href="site-plan.html">View Site Plan</a>
   </footer>
 
-</div>
 </body>
 </html>

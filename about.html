@@ -3,37 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | John Merrill</title>
-  <link rel="stylesheet" href="styles/style.css" />
+  <title>About Me | John Merrill</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #4CAF50;
+      --secondary: #FF9800;
+      --accent1: #2196F3;
+      --accent2: #e0f7fa;
+      --heading-font: 'Montserrat', sans-serif;
+      --body-font: 'Roboto', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--body-font);
+      background-color: var(--accent2);
+      color: #333;
+    }
+
+    h1, h2, h3, nav a {
+      font-family: var(--heading-font);
+    }
+
+    header {
+      background-color: var(--accent1);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 4px solid var(--primary);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header h2 {
+      margin: 10px 0 20px;
+      font-weight: normal;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--secondary);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .card img {
+      display: block;
+      max-width: 300px;
+      margin: 25px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: var(--accent1);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-<div id="content">
-  
+
   <header>
     <h1>John Merrill</h1>
     <h2>WDD 130.03</h2>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
+      <a href="about.html" class="active">About Me</a>
       <a href="projects.html">My Projects</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>My Projects</h2>
+    <section class="card">
+      <h2>About Me</h2>
       <p>This section shares the story behind who I am—where I’m from, how I balance school and family, and what values are important to me. It includes stories and background information about my life in the form of photos and personal growth through education.</p>
-      <img src="images/room.JPG" alt="Wireframe sketch of site layout" />
-      <img src="images/fam.JPGs" alt="Code editor screenshot" />
+      <img src="images/room.JPG" alt="John in his room" />
+      <img src="images/fam.JPG" alt="John with family" />
     </section>
   </main>
-  
+
   <footer>
     <p>&copy; 2025 John Merrill | WDD 130.03</p>
     <p><a href="site-plan.html">Site Plan</a></p>
   </footer>
 
-</div>
 </body>
 </html>
-
